@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://issheepbox.org/schemas/plugins.schema.json",
+  "title": "ISB Plugin Registry Index",
+  "type": "object",
+  "required": ["registryVersion", "generatedAt", "plugins"],
+  "properties": {
+    "registryVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "registry 索引格式版本，SemVer"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "索引最后更新时间 ISO 8601 UTC"
+    },
+    "plugins": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/pluginEntry" }
+    }
+  },
+  "definitions": {
+    "pluginEntry": {
+      "type": "object",
+      "required": [
+        "id", "name", "description", "author", "version", "apiVersion",
+        "repository", "releaseUrl", "downloadUrl", "permissions", "publishedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9]+)+$",
+          "description": "反向域名风格全局唯一 ID"
+        },
+        "name": { "type": "string", "maxLength": 50 },
+        "description": { "type": "string", "maxLength": 200 },
+        "author": { "type": "string", "maxLength": 100 },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "apiVersion": { "type": "string" },
+        "license": { "type": "string" },
+        "icon": { "type": "string", "format": "uri" },
+        "homepage": { "type": "string", "format": "uri" },
+        "repository": { "type": "string", "format": "uri" },
+        "releaseUrl": { "type": "string", "format": "uri" },
+        "downloadUrl": { "type": "string", "format": "uri" },
+        "permissions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "权限列表，镜像 manifest"
+        },
+        "requires": { "type": "object" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "publishedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
