@@ -1,6 +1,6 @@
 {
   "registryVersion": "1.0.0",
-  "generatedAt": "2026-10-14T04:42:53Z",
+  "generatedAt": "2026-10-14T16:26:20Z",
   "plugins": [
     {
       "id": "org.issheepbox.shell-default",
@@ -10,10 +10,12 @@
       "version": "0.1.0",
       "apiVersion": "^1.0.0",
       "repository": "https://github.com/PastSheep/issheepbox/",
-      "status": "pending",
+      "status": "active",
       "permissions": [],
       "tags": ["shell", "first-party"],
-      "publishedAt": "2026-10-14T04:42:53Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.shell-default-0.1.0.zip",
+      "publishedAt": "2026-10-14T16:26:20Z"
     },
     {
       "id": "org.issheepbox.example.note",
@@ -24,10 +26,12 @@
       "apiVersion": "^1.0.0",
       "license": "MIT",
       "repository": "https://github.com/PastSheep/issheepbox/",
-      "status": "pending",
+      "status": "active",
       "permissions": [],
       "tags": ["example", "productivity", "note"],
-      "publishedAt": "2026-10-14T04:42:53Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.example.note-1.0.0.zip",
+      "publishedAt": "2026-10-14T16:26:20Z"
     },
     {
       "id": "org.issheepbox.example.file-stats",
@@ -38,10 +42,12 @@
       "apiVersion": "^1.0.0",
       "license": "MIT",
       "repository": "https://github.com/PastSheep/issheepbox/",
-      "status": "pending",
+      "status": "active",
       "permissions": ["files:read"],
       "tags": ["example", "files"],
-      "publishedAt": "2026-10-14T04:42:53Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.example.file-stats-1.0.0.zip",
+      "publishedAt": "2026-10-14T16:26:20Z"
     },
     {
       "id": "org.issheepbox.example.theme-service",
@@ -52,10 +58,12 @@
       "apiVersion": "^1.0.0",
       "license": "MIT",
       "repository": "https://github.com/PastSheep/issheepbox/",
-      "status": "pending",
+      "status": "active",
       "permissions": [],
       "tags": ["example", "theme", "service"],
-      "publishedAt": "2026-10-14T04:42:53Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.example.theme-service-1.0.0.zip",
+      "publishedAt": "2026-10-14T16:26:20Z"
     }
   ]
 }
