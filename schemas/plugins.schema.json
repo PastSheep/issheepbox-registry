@@ -25,12 +25,12 @@
       "type": "object",
       "required": [
         "id", "name", "description", "author", "version", "apiVersion",
-        "repository", "releaseUrl", "downloadUrl", "permissions", "publishedAt"
+        "repository", "permissions", "publishedAt"
       ],
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9]+)+$",
+          "pattern": "^[a-z][a-z0-9-]*(\\.[a-z0-9-]+)+$",
           "description": "反向域名风格全局唯一 ID"
         },
         "name": { "type": "string", "maxLength": 50 },
@@ -45,6 +45,11 @@
         "icon": { "type": "string", "format": "uri" },
         "homepage": { "type": "string", "format": "uri" },
         "repository": { "type": "string", "format": "uri" },
+        "status": {
+          "type": "string",
+          "enum": ["active", "pending"],
+          "description": "上架状态：active=已发布可下载；pending=元数据已登记、zip 资产待发布"
+        },
         "releaseUrl": { "type": "string", "format": "uri" },
         "downloadUrl": { "type": "string", "format": "uri" },
         "permissions": {
@@ -58,6 +63,14 @@
           "items": { "type": "string" }
         },
         "publishedAt": { "type": "string", "format": "date-time" }
+      },
+      "if": {
+        "properties": { "status": { "const": "pending" } },
+        "required": ["status"]
+      },
+      "then": {},
+      "else": {
+        "required": ["releaseUrl", "downloadUrl"]
       },
       "additionalProperties": false
     }
