@@ -1,37 +1,37 @@
 {
   "registryVersion": "1.0.0",
-  "generatedAt": "2026-10-14T16:26:20Z",
+  "generatedAt": "2026-10-15T01:02:29Z",
   "plugins": [
     {
       "id": "org.issheepbox.shell-default",
       "name": "Is Sheep Box 默认壳",
       "description": "第一方默认宿主壳：提供主界面、插件列表与面板占位 seam。",
       "author": "Is Sheep Box",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "apiVersion": "^1.0.0",
       "repository": "https://github.com/PastSheep/issheepbox/",
       "status": "active",
       "permissions": [],
       "tags": ["shell", "first-party"],
-      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
-      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.shell-default-0.1.0.zip",
-      "publishedAt": "2026-10-14T16:26:20Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.2.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.2.0/org.issheepbox.shell-default-0.2.0.zip",
+      "publishedAt": "2026-10-15T01:02:29Z"
     },
     {
       "id": "org.issheepbox.example.note",
       "name": "便签",
       "description": "TASK-009 官方示例插件：纯 UI 面板形态（无权限），经 shell:ui seam 注册面板、经 events/services 与其他插件协作",
       "author": "Is Sheep Box",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "apiVersion": "^1.0.0",
       "license": "MIT",
       "repository": "https://github.com/PastSheep/issheepbox/",
       "status": "active",
       "permissions": [],
       "tags": ["example", "productivity", "note"],
-      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.1.0",
-      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.1.0/org.issheepbox.example.note-1.0.0.zip",
-      "publishedAt": "2026-10-14T16:26:20Z"
+      "releaseUrl": "https://github.com/PastSheep/issheepbox/releases/tag/v0.2.0",
+      "downloadUrl": "https://github.com/PastSheep/issheepbox/releases/download/v0.2.0/org.issheepbox.example.note-1.1.0.zip",
+      "publishedAt": "2026-10-15T01:02:29Z"
     },
     {
       "id": "org.issheepbox.example.file-stats",
